@@ -8,9 +8,9 @@ import notes from './components/note'
   <div class="board">
     <div class="content">
       <div v-for="note in notes" :key="note.id" class="item">
-        <h2>{{ note.title }}</h2>
-        <p>{{ note.content }}</p>
+        <h1>{{ note.title }}</h1>
         <div class="time">{{ note.time }}</div>
+        <p>{{ note.content }}</p>
       </div>
     </div>
     <div class="footer">
@@ -39,7 +39,7 @@ import notes from './components/note'
 body {
   padding: 0;
   margin: 0;
-  /* font-family: Arial, Helvetica, 'Microsoft YaHei', '黑体', sans-serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .footer {
@@ -78,18 +78,22 @@ body {
 
 .board .content {
   max-width: 60vw;
-  text-align: center;
+  /* text-align: center; */
   padding-top: calc(30vh - 100px);
 }
 .board .content .item {
   padding-top: 100px;
 }
-
+.board .content .item h1 {
+  font-weight: 300;
+  color: #333333;
+}
 .board .content .item p {
   font-size: 1.2rem;
   line-height: 2.2rem;
   color: #333333;
-  font-weight: 100;
+  font-weight: 200;
+  white-space: pre-line;
 }
 
 .board .content .item .time {
