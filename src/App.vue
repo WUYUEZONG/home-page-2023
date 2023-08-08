@@ -23,7 +23,7 @@ import notes from './components/note'
 
 <style>
 
-@font-face {
+/* @font-face {
   font-family: 'kkzt';
   src: url('/public/kuaikanshijieti.otf');
 }
@@ -34,7 +34,7 @@ import notes from './components/note'
 @font-face {
   font-family: 'hmsct';
   src: url('/public/HarmonyOS_Sans_SC_Thin.ttf');
-}
+} */
 
 body {
   padding: 0;
@@ -73,7 +73,7 @@ body {
   height: calc(100vh - 60px);
   justify-content: center;
   overflow-y: auto;
-  background: url('/src/assets/3.webp') no-repeat \ cover;
+  /* background: url('/src/assets/3.webp') no-repeat \ cover; */
 }
 
 .board .content {
